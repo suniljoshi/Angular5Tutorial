@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="main-container">
+    <div class="left-container" *ngIf="employees.length > 0; else elseBlock">
+        <h2>No of employees:</h2>
+        <p>{{itemCount}}</p>
+    </div>
+
+    <ng-template #elseBlock>
+        <div class="left-container">
+            <h2>Oops no employees..!</h2>
+            <p>First Add employee</p>
+        </div>
+    </ng-template>
+
+
+    <div class="right-container">
+        <div>
+            <h2> Add new employee</h2>
+            <form>
+                <div>
+                    <form>
+                        
+                        <div class="form-group">
+                            <label>First Name</label>
+                       <!--   <input type="text" name="firstname" value="6" [(ngModel)]="newEmplpoyee.id">-->
+                            <input type="text" name="firstname" value="" [(ngModel)]="newEmplpoyee.fname">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" name="lastname" value="" [(ngModel)]="newEmplpoyee.lname">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Id</label>
+                            <input type="email" name="email" value="" [(ngModel)]="newEmplpoyee.email">
+                        </div>
+                        <br />
+                        <button (click)="addNewEmplpoyee()"> Save</button>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+.main-container {
+
+    padding: 30px;
+
+
+    .left-container {
+          float: left;
+    width: 50%;
+    padding: 108px 10%;
+    box-sizing: border-box;
+
+
+
+        h2, p {
+           text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    background: #6f4b4b;
+    padding: 20px;
+    color: white;
+
+        }
+       
+
+
+    }
+    .right-container {
+        float: left;
+        width: 50%;
+        padding: 0 100px;
+        box-sizing: border-box;
+        text-align: center;
+        .form-group {
+            width: 100%;
+            input {
+
+
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+                border-radius: 2px;
+                border: 1px solid #c2c2c2;
+            }
+            label {
+                float: left;
+                padding: 10px 0px;
+            }
+
+        }
+        button {
+            margin-top: 30px;
+            padding: 9px 44px;
+            background: #e97171;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+        }
+    }
+}
